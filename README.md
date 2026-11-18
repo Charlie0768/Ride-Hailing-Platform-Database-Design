@@ -34,6 +34,7 @@ make package                       # after reviewing the rendered pages
 | [scripts/](scripts/) | Data generation, MySQL verification, report generation, compilation and packaging |
 | [figures/](figures/) | Four diagram sets in PDF, SVG, PNG and editable draw.io format |
 | [results/](results/) | Actual TSV/JSON outputs, metadata, 32 checks and delivery checks |
+| [contribution/Group_Project_Contribution_Form_Lin_Shuaiyu.docx](contribution/Group_Project_Contribution_Form_Lin_Shuaiyu.docx) | Lin Shuaiyu's completed G6 contribution form; six members, all scores 100% as confirmed by the evaluator |
 | [Makefile](Makefile), [requirements-dev.txt](requirements-dev.txt) | Rebuild entry points and optional Python dependencies |
 | [ride_hailing_complete.zip](ride_hailing_complete.zip) | Complete downloadable artifact bundle |
 | [SHA256SUMS.txt](SHA256SUMS.txt) | SHA-256 checksums for packaged files (excluding the manifest itself and ZIP) |
@@ -47,6 +48,12 @@ The repository contains the project deliverables. Local course slides, the origi
 - Trip0 is explicitly identified as a reconstructed design worksheet; ShiftWide is a separate illustrative 2NF counterexample. Neither is claimed to have been created in MySQL. The final operational schema remains unchanged.
 - Lin Shuaiyu's confirmed responsibility runs from topic definition through requirements, ER/EER design, relational mapping and normalization. Sample-data preparation and later work are not allocated as confirmed duties. The other five members have TBD placeholders. No contribution percentages or peer-assessment scores are invented.
 - The original Word document is unchanged. Earlier report versions are retained locally under `build/`, outside Git and the delivery ZIP.
+
+## Individual contribution form
+
+[Download Lin Shuaiyu's completed form](contribution/Group_Project_Contribution_Form_Lin_Shuaiyu.docx). It identifies G6 and the evaluator, lists the six members with their student IDs, and leaves the seventh row blank. All six scores are **100%**, explicitly confirmed by Lin Shuaiyu. These are individual contribution ratings, not shares of a total 100%; they do not assign project duties to the other members.
+
+The supplied form states a deadline of **December 11, 2026** and submission via **BB → Group project submission → Contribution form**. Every submitted form must score all group members. For a six-person group, at least four members must submit before the averaged ratings take effect; otherwise the default is 100% for everyone. This repository upload is not a Blackboard submission. The original blank form is preserved locally, and its instructions are retained in the completed document.
 
 ## Diagrams and SQL evidence
 
