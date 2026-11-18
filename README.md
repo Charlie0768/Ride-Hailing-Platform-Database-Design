@@ -1,6 +1,6 @@
 # Ride-Hailing Platform Database Design — G6
 
-Read the [English report](report_en.pdf) or its corresponding [Chinese report](report_zh.pdf). Both use the same five main chapters, schema, sample data, diagrams and verified results. The cover title and all six member names remain in English in both versions; the sixth member is **Jin Conghao**.
+Read the [English report](report_en.pdf) or its corresponding [Chinese report](report_zh.pdf). Both use the same five main chapters, schema, sample data, diagrams and verified results. 
 
 本仓库提供同步的中英文报告、LaTeX 源码、编译程序、完整 SQL、合成数据生成程序、四类可编辑图及执行验证结果。正文按需求、概念设计、关系映射与规范化、实现验证、数据使用与讨论五章组织；附录包含数据字典、参考材料与复现说明，以及成员职责草稿。中文版完整解释最新的范式推导；SQL、表名和图中标识符保持英文，以便逐项核对。
 
@@ -42,7 +42,7 @@ The repository contains the project deliverables. Local course slides, the origi
 
 ## Current revision
 
-- The cover lists exactly six members and the supplied student IDs. The sixth name is **Jin Conghao**, as corrected by the user.
+- The cover lists exactly six members and the supplied student IDs. 
 - Chapter 3 shows the initial relational schema S0, the 1NF check, the 2NF check and a separate ShiftWide counterexample, the Trip0 decomposition for 3NF, and a relation-by-relation BCNF check. It explains candidate keys, dependencies, lossless joins, dependency preservation and the treatment of unassigned trips.
 - Trip0 is explicitly identified as a reconstructed design worksheet; ShiftWide is a separate illustrative 2NF counterexample. Neither is claimed to have been created in MySQL. The final operational schema remains unchanged.
 - Lin Shuaiyu's confirmed responsibility runs from topic definition through requirements, ER/EER design, relational mapping and normalization. Sample-data preparation and later work are not allocated as confirmed duties. The other five members have TBD placeholders. No contribution percentages or peer-assessment scores are invented.
