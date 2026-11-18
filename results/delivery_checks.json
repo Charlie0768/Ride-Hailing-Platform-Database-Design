@@ -1,0 +1,43 @@
+{
+  "reports": {
+    "en": {
+      "pages": 37,
+      "six_member_cover": true,
+      "main_chapters": 5,
+      "language": "English",
+      "full_core_ddl_present": true,
+      "diagram_pdf_pages": [
+        5,
+        6,
+        8,
+        16
+      ],
+      "sha256": "fa2bc5c8f3fb1b21200fb610464e8b2a54986c40c67a767cdebca6a86cc2a35c"
+    },
+    "zh": {
+      "pages": 36,
+      "six_member_cover": true,
+      "main_chapters": 5,
+      "language": "Chinese",
+      "full_core_ddl_present": true,
+      "diagram_pdf_pages": [
+        5,
+        6,
+        8,
+        16
+      ],
+      "sha256": "d2df28606c01d70d3de4dc8c5ea22b3d271fb9bfb331a34aff7628bc31fe1bc9"
+    }
+  },
+  "mysql_checks_passed": 32,
+  "fresh_instance_reproduction": "passed",
+  "source_lecture_1": "not supplied",
+  "diagram_formats": [
+    "pdf",
+    "svg",
+    "png",
+    "drawio"
+  ],
+  "diagram_count": 4,
+  "visual_review": "All current English and Chinese report pages inspected; normalization, cover, diagrams and SQL pages checked."
+}

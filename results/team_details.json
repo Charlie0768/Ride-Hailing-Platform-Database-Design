@@ -1,0 +1,37 @@
+{
+  "group": "G6",
+  "title": "Ride-Hailing Platform Database Design",
+  "members": [
+    {
+      "member": 1,
+      "student_id": "226040384",
+      "name": "Lin Shuaiyu"
+    },
+    {
+      "member": 2,
+      "student_id": "226040421",
+      "name": "Cai Ruihe"
+    },
+    {
+      "member": 3,
+      "student_id": "226040351",
+      "name": "Li Songzi"
+    },
+    {
+      "member": 4,
+      "student_id": "226040373",
+      "name": "Wen Zhang"
+    },
+    {
+      "member": 5,
+      "student_id": "226040424",
+      "name": "Zhang Xiujie"
+    },
+    {
+      "member": 6,
+      "student_id": "122090871",
+      "name": "Jin Conghao"
+    }
+  ],
+  "responsibilities": "First member confirmed through logical design; all others TBD; data preparation and later work not allocated."
+}

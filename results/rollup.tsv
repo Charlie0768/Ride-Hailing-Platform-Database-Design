@@ -1,0 +1,7 @@
+calendar_year	calendar_month	model	trips	gross_fare
+2026	10	Electric	39	2053.68
+2026	10	MPV	45	2722.32
+2026	10	Sedan	46	3077.92
+2026	10	NULL	130	7853.92
+2026	NULL	NULL	130	7853.92
+NULL	NULL	NULL	130	7853.92

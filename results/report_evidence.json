@@ -1,0 +1,488 @@
+{
+  "show_tables": {
+    "sql": "SHOW TABLES;",
+    "rows": [
+      {
+        "Tables_in_ride_hailing": "app_user"
+      },
+      {
+        "Tables_in_ride_hailing": "cancelled_trip"
+      },
+      {
+        "Tables_in_ride_hailing": "completed_trip"
+      },
+      {
+        "Tables_in_ride_hailing": "driver"
+      },
+      {
+        "Tables_in_ride_hailing": "driver_shift"
+      },
+      {
+        "Tables_in_ride_hailing": "dw_date"
+      },
+      {
+        "Tables_in_ride_hailing": "dw_driver"
+      },
+      {
+        "Tables_in_ride_hailing": "dw_trip_fact"
+      },
+      {
+        "Tables_in_ride_hailing": "dw_vehicle"
+      },
+      {
+        "Tables_in_ride_hailing": "insurance_policy"
+      },
+      {
+        "Tables_in_ride_hailing": "passenger"
+      },
+      {
+        "Tables_in_ride_hailing": "review"
+      },
+      {
+        "Tables_in_ride_hailing": "surcharge"
+      },
+      {
+        "Tables_in_ride_hailing": "trip"
+      },
+      {
+        "Tables_in_ride_hailing": "trip_financials"
+      },
+      {
+        "Tables_in_ride_hailing": "trip_service"
+      },
+      {
+        "Tables_in_ride_hailing": "vehicle"
+      }
+    ]
+  },
+  "describe_trip": {
+    "sql": "DESCRIBE trip;",
+    "rows": [
+      {
+        "Field": "trip_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "passenger_id",
+        "Type": "int",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "plate",
+        "Type": "varchar(12)",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "requested_at",
+        "Type": "datetime",
+        "Null": "NO",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "started_at",
+        "Type": "datetime",
+        "Null": "YES",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "origin_zone",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "destination_zone",
+        "Type": "varchar(30)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "service_type",
+        "Type": "varchar(12)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "estimated_km",
+        "Type": "decimal(8,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "estimated_fare",
+        "Type": "decimal(10,2)",
+        "Null": "NO",
+        "Key": "",
+        "Default": "NULL",
+        "Extra": ""
+      },
+      {
+        "Field": "status",
+        "Type": "varchar(12)",
+        "Null": "NO",
+        "Key": "MUL",
+        "Default": "REQUESTED",
+        "Extra": ""
+      }
+    ]
+  },
+  "app_user": {
+    "sql": "SELECT user_id,full_name,phone FROM app_user ORDER BY user_id LIMIT 3;",
+    "rows": [
+      {
+        "user_id": "1",
+        "full_name": "Demo User 1",
+        "phone": "+860000000001"
+      },
+      {
+        "user_id": "2",
+        "full_name": "Demo User 2",
+        "phone": "+860000000002"
+      },
+      {
+        "user_id": "3",
+        "full_name": "Demo User 3",
+        "phone": "+860000000003"
+      }
+    ]
+  },
+  "passenger": {
+    "sql": "SELECT * FROM passenger ORDER BY passenger_id LIMIT 3;",
+    "rows": [
+      {
+        "passenger_id": "1",
+        "tier": "PLATINUM"
+      },
+      {
+        "passenger_id": "101",
+        "tier": "STANDARD"
+      },
+      {
+        "passenger_id": "102",
+        "tier": "GOLD"
+      }
+    ]
+  },
+  "driver": {
+    "sql": "SELECT * FROM driver ORDER BY driver_id LIMIT 3;",
+    "rows": [
+      {
+        "driver_id": "1",
+        "license_no": "DEMO-LIC-001",
+        "lifetime_km": "1125.00"
+      },
+      {
+        "driver_id": "2",
+        "license_no": "DEMO-LIC-002",
+        "lifetime_km": "1250.00"
+      },
+      {
+        "driver_id": "3",
+        "license_no": "DEMO-LIC-003",
+        "lifetime_km": "1375.00"
+      }
+    ]
+  },
+  "vehicle": {
+    "sql": "SELECT * FROM vehicle ORDER BY plate LIMIT 3;",
+    "rows": [
+      {
+        "plate": "DEMO001",
+        "driver_id": "1",
+        "model": "MPV",
+        "color": "Blue",
+        "capacity": "4"
+      },
+      {
+        "plate": "DEMO002",
+        "driver_id": "2",
+        "model": "Electric",
+        "color": "Black",
+        "capacity": "4"
+      },
+      {
+        "plate": "DEMO003",
+        "driver_id": "3",
+        "model": "Sedan",
+        "color": "White",
+        "capacity": "6"
+      }
+    ]
+  },
+  "insurance_policy": {
+    "sql": "SELECT * FROM insurance_policy ORDER BY policy_id LIMIT 3;",
+    "rows": [
+      {
+        "policy_id": "1",
+        "plate": "DEMO001",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-11-10"
+      },
+      {
+        "policy_id": "2",
+        "plate": "DEMO002",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-11-10"
+      },
+      {
+        "policy_id": "3",
+        "plate": "DEMO003",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-11-10"
+      }
+    ]
+  },
+  "driver_shift": {
+    "sql": "SELECT * FROM driver_shift ORDER BY driver_id,shift_start LIMIT 3;",
+    "rows": [
+      {
+        "driver_id": "1",
+        "shift_start": "2026-10-01 06:00:00",
+        "shift_end": "2026-10-01 13:00:00"
+      },
+      {
+        "driver_id": "1",
+        "shift_start": "2026-10-01 14:00:00",
+        "shift_end": "2026-10-01 23:00:00"
+      },
+      {
+        "driver_id": "1",
+        "shift_start": "2026-10-02 06:00:00",
+        "shift_end": "2026-10-02 13:00:00"
+      }
+    ]
+  },
+  "trip": {
+    "sql": "SELECT trip_id,passenger_id,plate,status,estimated_fare FROM trip ORDER BY trip_id LIMIT 6;",
+    "rows": [
+      {
+        "trip_id": "1",
+        "passenger_id": "1",
+        "plate": "DEMO001",
+        "status": "COMPLETED",
+        "estimated_fare": "87.17"
+      },
+      {
+        "trip_id": "2",
+        "passenger_id": "118",
+        "plate": "NULL",
+        "status": "REQUESTED",
+        "estimated_fare": "40.64"
+      },
+      {
+        "trip_id": "3",
+        "passenger_id": "111",
+        "plate": "DEMO003",
+        "status": "IN_PROGRESS",
+        "estimated_fare": "88.69"
+      },
+      {
+        "trip_id": "4",
+        "passenger_id": "124",
+        "plate": "DEMO004",
+        "status": "COMPLETED",
+        "estimated_fare": "31.70"
+      },
+      {
+        "trip_id": "5",
+        "passenger_id": "125",
+        "plate": "DEMO005",
+        "status": "ASSIGNED",
+        "estimated_fare": "20.08"
+      },
+      {
+        "trip_id": "6",
+        "passenger_id": "101",
+        "plate": "NULL",
+        "status": "CANCELLED",
+        "estimated_fare": "53.75"
+      }
+    ]
+  },
+  "completed_trip": {
+    "sql": "SELECT * FROM completed_trip ORDER BY trip_id LIMIT 3;",
+    "rows": [
+      {
+        "trip_id": "1",
+        "ended_at": "2026-10-01 09:36:00",
+        "base_fare": "91.52",
+        "tip": "0.00",
+        "actual_km": "24.38"
+      },
+      {
+        "trip_id": "4",
+        "ended_at": "2026-10-01 12:39:00",
+        "base_fare": "27.01",
+        "tip": "2.00",
+        "actual_km": "15.39"
+      },
+      {
+        "trip_id": "7",
+        "ended_at": "2026-10-01 15:42:00",
+        "base_fare": "74.28",
+        "tip": "0.00",
+        "actual_km": "14.32"
+      }
+    ]
+  },
+  "cancelled_trip": {
+    "sql": "SELECT * FROM cancelled_trip ORDER BY trip_id LIMIT 3;",
+    "rows": [
+      {
+        "trip_id": "6",
+        "cancelled_at": "2026-10-01 14:10:00",
+        "reason": "Waiting time"
+      },
+      {
+        "trip_id": "14",
+        "cancelled_at": "2026-10-02 12:18:00",
+        "reason": "Waiting time"
+      },
+      {
+        "trip_id": "18",
+        "cancelled_at": "2026-10-02 16:22:00",
+        "reason": "Plans changed"
+      }
+    ]
+  },
+  "review": {
+    "sql": "SELECT trip_id,passenger_score,driver_score FROM review ORDER BY trip_id LIMIT 3;",
+    "rows": [
+      {
+        "trip_id": "1",
+        "passenger_score": "92",
+        "driver_score": "93"
+      },
+      {
+        "trip_id": "7",
+        "passenger_score": "67",
+        "driver_score": "77"
+      },
+      {
+        "trip_id": "9",
+        "passenger_score": "66",
+        "driver_score": "NULL"
+      }
+    ]
+  },
+  "surcharge": {
+    "sql": "SELECT * FROM surcharge ORDER BY trip_id LIMIT 3;",
+    "rows": [
+      {
+        "trip_id": "9",
+        "amount": "4.00"
+      },
+      {
+        "trip_id": "11",
+        "amount": "4.00"
+      },
+      {
+        "trip_id": "15",
+        "amount": "4.00"
+      }
+    ]
+  },
+  "joined_example": {
+    "sql": "SELECT t.trip_id,t.status,t.plate,v.driver_id,t.estimated_fare,f.total_fare FROM trip t LEFT JOIN vehicle v ON v.plate=t.plate LEFT JOIN trip_financials f ON f.trip_id=t.trip_id ORDER BY t.trip_id LIMIT 6;",
+    "rows": [
+      {
+        "trip_id": "1",
+        "status": "COMPLETED",
+        "plate": "DEMO001",
+        "driver_id": "1",
+        "estimated_fare": "87.17",
+        "total_fare": "91.52"
+      },
+      {
+        "trip_id": "2",
+        "status": "REQUESTED",
+        "plate": "NULL",
+        "driver_id": "NULL",
+        "estimated_fare": "40.64",
+        "total_fare": "NULL"
+      },
+      {
+        "trip_id": "3",
+        "status": "IN_PROGRESS",
+        "plate": "DEMO003",
+        "driver_id": "3",
+        "estimated_fare": "88.69",
+        "total_fare": "NULL"
+      },
+      {
+        "trip_id": "4",
+        "status": "COMPLETED",
+        "plate": "DEMO004",
+        "driver_id": "4",
+        "estimated_fare": "31.70",
+        "total_fare": "29.01"
+      },
+      {
+        "trip_id": "5",
+        "status": "ASSIGNED",
+        "plate": "DEMO005",
+        "driver_id": "5",
+        "estimated_fare": "20.08",
+        "total_fare": "NULL"
+      },
+      {
+        "trip_id": "6",
+        "status": "CANCELLED",
+        "plate": "NULL",
+        "driver_id": "NULL",
+        "estimated_fare": "53.75",
+        "total_fare": "NULL"
+      }
+    ]
+  },
+  "crud_insert": {
+    "sql": "INSERT INTO app_user(user_id,full_name,phone) VALUES(9998,'CRUD Demo','demo-crud-9998');\nSELECT user_id,full_name,phone FROM app_user WHERE user_id=9998;",
+    "rows": [
+      {
+        "user_id": "9998",
+        "full_name": "CRUD Demo",
+        "phone": "demo-crud-9998"
+      }
+    ]
+  },
+  "crud_update": {
+    "sql": "UPDATE app_user SET full_name='CRUD Updated' WHERE user_id=9998;\nSELECT user_id,full_name,phone FROM app_user WHERE user_id=9998;",
+    "rows": [
+      {
+        "user_id": "9998",
+        "full_name": "CRUD Updated",
+        "phone": "demo-crud-9998"
+      }
+    ]
+  },
+  "crud_delete": {
+    "sql": "DELETE FROM app_user WHERE user_id=9998;\nSELECT COUNT(*) AS remaining FROM app_user WHERE user_id=9998;",
+    "rows": [
+      {
+        "remaining": "0"
+      }
+    ]
+  }
+}

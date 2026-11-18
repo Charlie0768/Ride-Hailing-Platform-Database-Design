@@ -1,0 +1,12 @@
+Field	Type	Null	Key	Default	Extra
+trip_id	int	NO	PRI	NULL	
+passenger_id	int	NO	MUL	NULL	
+plate	varchar(12)	YES	MUL	NULL	
+requested_at	datetime	NO		NULL	
+started_at	datetime	YES		NULL	
+origin_zone	varchar(30)	NO		NULL	
+destination_zone	varchar(30)	NO		NULL	
+service_type	varchar(12)	NO		NULL	
+estimated_km	decimal(8,2)	NO		NULL	
+estimated_fare	decimal(10,2)	NO		NULL	
+status	varchar(12)	NO	MUL	REQUESTED	

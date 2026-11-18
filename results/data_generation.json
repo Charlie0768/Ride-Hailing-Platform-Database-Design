@@ -1,0 +1,13 @@
+{
+  "seed": 20261118,
+  "synthetic": true,
+  "trips": 200,
+  "window": "2026-10-01 through 2026-10-20",
+  "states": {
+    "ASSIGNED": 20,
+    "CANCELLED": 30,
+    "COMPLETED": 130,
+    "IN_PROGRESS": 10,
+    "REQUESTED": 10
+  }
+}

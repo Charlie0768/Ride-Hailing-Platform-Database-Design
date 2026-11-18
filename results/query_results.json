@@ -1,0 +1,451 @@
+{
+  "version": [
+    {
+      "version": "8.4.13"
+    }
+  ],
+  "counts": [
+    {
+      "table_name": "app_user",
+      "rows_n": "34"
+    },
+    {
+      "table_name": "passenger",
+      "rows_n": "26"
+    },
+    {
+      "table_name": "driver",
+      "rows_n": "8"
+    },
+    {
+      "table_name": "vehicle",
+      "rows_n": "12"
+    },
+    {
+      "table_name": "insurance_policy",
+      "rows_n": "12"
+    },
+    {
+      "table_name": "driver_shift",
+      "rows_n": "320"
+    },
+    {
+      "table_name": "trip",
+      "rows_n": "200"
+    },
+    {
+      "table_name": "completed_trip",
+      "rows_n": "130"
+    },
+    {
+      "table_name": "cancelled_trip",
+      "rows_n": "30"
+    },
+    {
+      "table_name": "review",
+      "rows_n": "98"
+    },
+    {
+      "table_name": "surcharge",
+      "rows_n": "52"
+    }
+  ],
+  "status": [
+    {
+      "status": "ASSIGNED",
+      "trips": "20",
+      "percent_all": "10.00"
+    },
+    {
+      "status": "CANCELLED",
+      "trips": "30",
+      "percent_all": "15.00"
+    },
+    {
+      "status": "COMPLETED",
+      "trips": "130",
+      "percent_all": "65.00"
+    },
+    {
+      "status": "IN_PROGRESS",
+      "trips": "10",
+      "percent_all": "5.00"
+    },
+    {
+      "status": "REQUESTED",
+      "trips": "10",
+      "percent_all": "5.00"
+    }
+  ],
+  "finance": [
+    {
+      "completed": "130",
+      "total_fare": "7853.92",
+      "mean_fare": "60.41",
+      "mean_difference": "4.63",
+      "surcharges": "320.00",
+      "tips": "170.00"
+    }
+  ],
+  "drivers": [
+    {
+      "driver_id": "3",
+      "completed": "23",
+      "gross_fare": "1497.16",
+      "mean_score": "80.26",
+      "scored": "23"
+    },
+    {
+      "driver_id": "1",
+      "completed": "20",
+      "gross_fare": "1304.07",
+      "mean_score": "84.60",
+      "scored": "20"
+    },
+    {
+      "driver_id": "2",
+      "completed": "20",
+      "gross_fare": "1273.09",
+      "mean_score": "82.60",
+      "scored": "20"
+    },
+    {
+      "driver_id": "4",
+      "completed": "22",
+      "gross_fare": "1258.05",
+      "mean_score": "NULL",
+      "scored": "0"
+    },
+    {
+      "driver_id": "7",
+      "completed": "14",
+      "gross_fare": "873.57",
+      "mean_score": "83.93",
+      "scored": "14"
+    },
+    {
+      "driver_id": "6",
+      "completed": "10",
+      "gross_fare": "669.05",
+      "mean_score": "82.90",
+      "scored": "10"
+    },
+    {
+      "driver_id": "8",
+      "completed": "10",
+      "gross_fare": "527.54",
+      "mean_score": "NULL",
+      "scored": "0"
+    },
+    {
+      "driver_id": "5",
+      "completed": "11",
+      "gross_fare": "451.39",
+      "mean_score": "82.64",
+      "scored": "11"
+    }
+  ],
+  "insurance": [
+    {
+      "policy_id": "1",
+      "plate": "DEMO001",
+      "valid_to": "2026-11-10"
+    },
+    {
+      "policy_id": "2",
+      "plate": "DEMO002",
+      "valid_to": "2026-11-10"
+    },
+    {
+      "policy_id": "3",
+      "plate": "DEMO003",
+      "valid_to": "2026-11-10"
+    }
+  ],
+  "daily": [
+    {
+      "date_key": "2026-10-01",
+      "trips": "6",
+      "gross_fare": "359.78"
+    },
+    {
+      "date_key": "2026-10-02",
+      "trips": "6",
+      "gross_fare": "317.75"
+    },
+    {
+      "date_key": "2026-10-03",
+      "trips": "6",
+      "gross_fare": "307.27"
+    },
+    {
+      "date_key": "2026-10-04",
+      "trips": "7",
+      "gross_fare": "478.56"
+    },
+    {
+      "date_key": "2026-10-05",
+      "trips": "9",
+      "gross_fare": "467.20"
+    },
+    {
+      "date_key": "2026-10-06",
+      "trips": "6",
+      "gross_fare": "438.52"
+    },
+    {
+      "date_key": "2026-10-07",
+      "trips": "6",
+      "gross_fare": "362.46"
+    },
+    {
+      "date_key": "2026-10-08",
+      "trips": "3",
+      "gross_fare": "264.56"
+    },
+    {
+      "date_key": "2026-10-09",
+      "trips": "6",
+      "gross_fare": "388.95"
+    },
+    {
+      "date_key": "2026-10-10",
+      "trips": "7",
+      "gross_fare": "424.53"
+    },
+    {
+      "date_key": "2026-10-11",
+      "trips": "6",
+      "gross_fare": "351.80"
+    },
+    {
+      "date_key": "2026-10-12",
+      "trips": "7",
+      "gross_fare": "370.28"
+    },
+    {
+      "date_key": "2026-10-13",
+      "trips": "8",
+      "gross_fare": "460.67"
+    },
+    {
+      "date_key": "2026-10-14",
+      "trips": "6",
+      "gross_fare": "331.26"
+    },
+    {
+      "date_key": "2026-10-15",
+      "trips": "7",
+      "gross_fare": "484.80"
+    },
+    {
+      "date_key": "2026-10-16",
+      "trips": "6",
+      "gross_fare": "407.16"
+    },
+    {
+      "date_key": "2026-10-17",
+      "trips": "6",
+      "gross_fare": "392.85"
+    },
+    {
+      "date_key": "2026-10-18",
+      "trips": "7",
+      "gross_fare": "363.53"
+    },
+    {
+      "date_key": "2026-10-19",
+      "trips": "8",
+      "gross_fare": "453.08"
+    },
+    {
+      "date_key": "2026-10-20",
+      "trips": "7",
+      "gross_fare": "428.91"
+    }
+  ],
+  "rollup": [
+    {
+      "calendar_year": "2026",
+      "calendar_month": "10",
+      "model": "Electric",
+      "trips": "39",
+      "gross_fare": "2053.68"
+    },
+    {
+      "calendar_year": "2026",
+      "calendar_month": "10",
+      "model": "MPV",
+      "trips": "45",
+      "gross_fare": "2722.32"
+    },
+    {
+      "calendar_year": "2026",
+      "calendar_month": "10",
+      "model": "Sedan",
+      "trips": "46",
+      "gross_fare": "3077.92"
+    },
+    {
+      "calendar_year": "2026",
+      "calendar_month": "10",
+      "model": "NULL",
+      "trips": "130",
+      "gross_fare": "7853.92"
+    },
+    {
+      "calendar_year": "2026",
+      "calendar_month": "NULL",
+      "model": "NULL",
+      "trips": "130",
+      "gross_fare": "7853.92"
+    },
+    {
+      "calendar_year": "NULL",
+      "calendar_month": "NULL",
+      "model": "NULL",
+      "trips": "130",
+      "gross_fare": "7853.92"
+    }
+  ],
+  "window": [
+    {
+      "date_key": "2026-10-01",
+      "daily_fare": "359.78",
+      "previous_day_fare": "NULL"
+    },
+    {
+      "date_key": "2026-10-02",
+      "daily_fare": "317.75",
+      "previous_day_fare": "359.78"
+    },
+    {
+      "date_key": "2026-10-03",
+      "daily_fare": "307.27",
+      "previous_day_fare": "317.75"
+    },
+    {
+      "date_key": "2026-10-04",
+      "daily_fare": "478.56",
+      "previous_day_fare": "307.27"
+    },
+    {
+      "date_key": "2026-10-05",
+      "daily_fare": "467.20",
+      "previous_day_fare": "478.56"
+    },
+    {
+      "date_key": "2026-10-06",
+      "daily_fare": "438.52",
+      "previous_day_fare": "467.20"
+    },
+    {
+      "date_key": "2026-10-07",
+      "daily_fare": "362.46",
+      "previous_day_fare": "438.52"
+    },
+    {
+      "date_key": "2026-10-08",
+      "daily_fare": "264.56",
+      "previous_day_fare": "362.46"
+    },
+    {
+      "date_key": "2026-10-09",
+      "daily_fare": "388.95",
+      "previous_day_fare": "264.56"
+    },
+    {
+      "date_key": "2026-10-10",
+      "daily_fare": "424.53",
+      "previous_day_fare": "388.95"
+    },
+    {
+      "date_key": "2026-10-11",
+      "daily_fare": "351.80",
+      "previous_day_fare": "424.53"
+    },
+    {
+      "date_key": "2026-10-12",
+      "daily_fare": "370.28",
+      "previous_day_fare": "351.80"
+    },
+    {
+      "date_key": "2026-10-13",
+      "daily_fare": "460.67",
+      "previous_day_fare": "370.28"
+    },
+    {
+      "date_key": "2026-10-14",
+      "daily_fare": "331.26",
+      "previous_day_fare": "460.67"
+    },
+    {
+      "date_key": "2026-10-15",
+      "daily_fare": "484.80",
+      "previous_day_fare": "331.26"
+    },
+    {
+      "date_key": "2026-10-16",
+      "daily_fare": "407.16",
+      "previous_day_fare": "484.80"
+    },
+    {
+      "date_key": "2026-10-17",
+      "daily_fare": "392.85",
+      "previous_day_fare": "407.16"
+    },
+    {
+      "date_key": "2026-10-18",
+      "daily_fare": "363.53",
+      "previous_day_fare": "392.85"
+    },
+    {
+      "date_key": "2026-10-19",
+      "daily_fare": "453.08",
+      "previous_day_fare": "363.53"
+    },
+    {
+      "date_key": "2026-10-20",
+      "daily_fare": "428.91",
+      "previous_day_fare": "453.08"
+    }
+  ],
+  "nested": [
+    {
+      "driver_id": "1",
+      "mean_fare": "65.20"
+    },
+    {
+      "driver_id": "7",
+      "mean_fare": "62.40"
+    },
+    {
+      "driver_id": "2",
+      "mean_fare": "63.65"
+    },
+    {
+      "driver_id": "3",
+      "mean_fare": "65.09"
+    },
+    {
+      "driver_id": "6",
+      "mean_fare": "66.91"
+    }
+  ],
+  "explain": [
+    {
+      "id": "1",
+      "select_type": "SIMPLE",
+      "table": "trip",
+      "partitions": "NULL",
+      "type": "range",
+      "possible_keys": "ix_trip_passenger_time",
+      "key": "ix_trip_passenger_time",
+      "key_len": "9",
+      "ref": "NULL",
+      "rows": "3",
+      "filtered": "100.00",
+      "Extra": "Using index condition"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "test": "duplicate primary key",
+    "passed": true,
+    "detail": "ERROR 1062 (23000) at line 1: Duplicate entry '1' for key 'app_user.PRIMARY'"
+  },
+  {
+    "test": "invalid foreign key",
+    "passed": true,
+    "detail": "ERROR 1452 (23000) at line 1: Cannot add or update a child row: a foreign key constraint fails (`ride_hailing`.`passenger`, CONSTRAINT `passenger_ibfk_1` FOREIGN KEY (`passenger_id`) REFERENCES `app_user` (`user_id`))"
+  },
+  {
+    "test": "invalid score",
+    "passed": true,
+    "detail": "ERROR 3819 (HY000) at line 1: Check constraint 'review_chk_1' is violated."
+  },
+  {
+    "test": "empty review",
+    "passed": true,
+    "detail": "ERROR 3819 (HY000) at line 1: Check constraint 'review_chk_3' is violated."
+  },
+  {
+    "test": "duplicate review",
+    "passed": true,
+    "detail": "ERROR 1062 (23000) at line 1: Duplicate entry '1' for key 'review.PRIMARY'"
+  },
+  {
+    "test": "invalid shift chronology",
+    "passed": true,
+    "detail": "ERROR 3819 (HY000) at line 1: Check constraint 'driver_shift_chk_1' is violated."
+  },
+  {
+    "test": "negative amount",
+    "passed": true,
+    "detail": "ERROR 3819 (HY000) at line 1: Check constraint 'completed_trip_chk_1' is violated."
+  },
+  {
+    "test": "missing required field",
+    "passed": true,
+    "detail": "ERROR 1048 (23000) at line 1: Column 'full_name' cannot be null"
+  },
+  {
+    "test": "vehicle ownership immutable",
+    "passed": true,
+    "detail": "ERROR 1644 (45000) at line 1: Vehicle ownership is fixed in this observation period"
+  },
+  {
+    "test": "completion cancellation exclusion",
+    "passed": true,
+    "detail": "ERROR 1644 (45000) at line 1: Cancellation requires an unstarted trip and valid time"
+  },
+  {
+    "test": "driver vehicle mismatch",
+    "passed": true,
+    "detail": "ERROR 1644 (45000) at line 1: Driver and vehicle mismatch"
+  },
+  {
+    "test": "failed assignment unchanged",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "start before request",
+    "passed": true,
+    "detail": "ERROR 3819 (HY000) at line 1: Check constraint 'trip_chk_4' is violated."
+  },
+  {
+    "test": "end before start",
+    "passed": true,
+    "detail": "ERROR 1644 (45000) at line 1: Completion requires an active trip and valid end time"
+  },
+  {
+    "test": "partial operation rollback",
+    "passed": true,
+    "detail": "ERROR 1644 (45000) at line 1: Invalid surcharge"
+  },
+  {
+    "test": "no detail after rollback",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "state after rollback",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "concurrent completion one winner",
+    "passed": true,
+    "detail": "success; ERROR 1644 (45000) at line 1: Expected IN_PROGRESS"
+  },
+  {
+    "test": "completed fare and single detail",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "cannot cancel completed trip",
+    "passed": true,
+    "detail": "ERROR 1644 (45000) at line 1: Expected unstarted trip"
+  },
+  {
+    "test": "cannot delete referenced user",
+    "passed": true,
+    "detail": "ERROR 1451 (23000) at line 1: Cannot delete or update a parent row: a foreign key constraint fails (`ride_hailing`.`driver`, CONSTRAINT `driver_ibfk_1` FOREIGN KEY (`driver_id`) REFERENCES `app_user` (`user_id`))"
+  },
+  {
+    "test": "successful cancellation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "insert update delete cycle",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "200 trips retained",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "state detail consistency",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "warehouse count reconciliation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "warehouse fare reconciliation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "financial view no fanout",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "role overlap supported",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "multiple daily shifts",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "app cannot bypass transitions",
+    "passed": true,
+    "detail": "ERROR 1142 (42000) at line 1: UPDATE command denied to user 'rh_validation'@'localhost' for table 'trip'"
+  },
+  {
+    "test": "app authorized request and cancel",
+    "passed": true,
+    "detail": ""
+  }
+]

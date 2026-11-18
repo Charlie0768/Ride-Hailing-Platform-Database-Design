@@ -1,0 +1,4 @@
+# Optional diagram regeneration, visual QA and packaging.
+# SQL generation / validation and LaTeX source generation use the standard library.
+PyMuPDF==1.26.5
+Pillow==11.3.0

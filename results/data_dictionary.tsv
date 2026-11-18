@@ -1,0 +1,49 @@
+TABLE_NAME	COLUMN_NAME	COLUMN_TYPE	IS_NULLABLE	COLUMN_KEY
+app_user	user_id	int	NO	PRI
+app_user	full_name	varchar(80)	NO	
+app_user	phone	varchar(20)	NO	UNI
+app_user	email	varchar(120)	YES	
+app_user	birth_date	date	YES	
+cancelled_trip	trip_id	int	NO	PRI
+cancelled_trip	cancelled_at	datetime	NO	
+cancelled_trip	reason	varchar(160)	NO	
+completed_trip	trip_id	int	NO	PRI
+completed_trip	ended_at	datetime	NO	
+completed_trip	base_fare	decimal(10,2)	NO	
+completed_trip	tip	decimal(10,2)	NO	
+completed_trip	actual_km	decimal(8,2)	NO	
+driver	driver_id	int	NO	PRI
+driver	license_no	varchar(30)	NO	UNI
+driver	lifetime_km	decimal(12,2)	NO	
+driver_shift	driver_id	int	NO	PRI
+driver_shift	shift_start	datetime	NO	PRI
+driver_shift	shift_end	datetime	YES	
+insurance_policy	policy_id	int	NO	PRI
+insurance_policy	plate	varchar(12)	NO	MUL
+insurance_policy	valid_from	date	NO	
+insurance_policy	valid_to	date	NO	
+passenger	passenger_id	int	NO	PRI
+passenger	tier	varchar(10)	NO	
+review	trip_id	int	NO	PRI
+review	passenger_score	smallint	YES	
+review	passenger_comment	varchar(200)	YES	
+review	driver_score	smallint	YES	
+review	driver_comment	varchar(200)	YES	
+surcharge	trip_id	int	NO	PRI
+surcharge	amount	decimal(10,2)	NO	
+trip	trip_id	int	NO	PRI
+trip	passenger_id	int	NO	MUL
+trip	plate	varchar(12)	YES	MUL
+trip	requested_at	datetime	NO	
+trip	started_at	datetime	YES	
+trip	origin_zone	varchar(30)	NO	
+trip	destination_zone	varchar(30)	NO	
+trip	service_type	varchar(12)	NO	
+trip	estimated_km	decimal(8,2)	NO	
+trip	estimated_fare	decimal(10,2)	NO	
+trip	status	varchar(12)	NO	MUL
+vehicle	plate	varchar(12)	NO	PRI
+vehicle	driver_id	int	NO	MUL
+vehicle	model	varchar(40)	NO	
+vehicle	color	varchar(20)	NO	
+vehicle	capacity	smallint	NO	
